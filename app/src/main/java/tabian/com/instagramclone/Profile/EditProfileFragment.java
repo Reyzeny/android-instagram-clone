@@ -12,8 +12,9 @@ import android.widget.ImageView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-import tabian.com.instagramclone.R;
+
 import tabian.com.instagramclone.Utils.UniversalImageLoader;
+import tabian.com.instagramclone2.R;
 
 /**
  * Created by User on 6/4/2017.

@@ -12,9 +12,10 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import tabian.com.instagramclone.Home.HomeActivity;
 import tabian.com.instagramclone.Likes.LikesActivity;
 import tabian.com.instagramclone.Profile.ProfileActivity;
-import tabian.com.instagramclone.R;
+
 import tabian.com.instagramclone.Search.SearchActivity;
 import tabian.com.instagramclone.Share.ShareActivity;
+import tabian.com.instagramclone2.R;
 
 /**
  * Created by User on 5/28/2017.

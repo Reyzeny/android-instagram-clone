@@ -14,9 +14,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import tabian.com.instagramclone.R;
+
 import tabian.com.instagramclone.models.User;
 import tabian.com.instagramclone.models.UserAccountSettings;
+import tabian.com.instagramclone2.R;
 
 /**
  * Created by User on 6/26/2017.

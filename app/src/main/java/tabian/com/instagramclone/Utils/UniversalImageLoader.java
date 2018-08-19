@@ -15,7 +15,8 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
-import tabian.com.instagramclone.R;
+import tabian.com.instagramclone2.R;
+
 
 /**
  * Created by User on 6/4/2017.

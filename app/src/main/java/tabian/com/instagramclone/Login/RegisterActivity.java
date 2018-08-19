@@ -21,8 +21,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import tabian.com.instagramclone.R;
+
 import tabian.com.instagramclone.Utils.FirebaseMethods;
+import tabian.com.instagramclone2.R;
 
 /**
  * Created by User on 6/19/2017.

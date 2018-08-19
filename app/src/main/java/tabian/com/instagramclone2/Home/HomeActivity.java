@@ -68,7 +68,7 @@ public class HomeActivity extends AppCompatActivity implements
         mFrameLayout = (FrameLayout) findViewById(R.id.container);
         mRelativeLayout = (RelativeLayout) findViewById(R.id.relLayoutParent);
 
-        setupFirebaseAuth();
+        //setupFirebaseAuth();
 
         initImageLoader();
         setupBottomNavigationView();
@@ -200,17 +200,17 @@ public class HomeActivity extends AppCompatActivity implements
     @Override
     public void onStart() {
         super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
+        //mAuth.addAuthStateListener(mAuthListener);
         mViewPager.setCurrentItem(HOME_FRAGMENT);
-        checkCurrentUser(mAuth.getCurrentUser());
+        //checkCurrentUser(mAuth.getCurrentUser());
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        if (mAuthListener != null) {
-            mAuth.removeAuthStateListener(mAuthListener);
-        }
+//        if (mAuthListener != null) {
+//            mAuth.removeAuthStateListener(mAuthListener);
+//        }
     }
 
 

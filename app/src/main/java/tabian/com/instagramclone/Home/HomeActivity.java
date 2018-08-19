@@ -18,7 +18,8 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import tabian.com.instagramclone.Login.LoginActivity;
-import tabian.com.instagramclone.R;
+import tabian.com.instagramclone2.R;
+
 import tabian.com.instagramclone.Utils.BottomNavigationViewHelper;
 import tabian.com.instagramclone.Utils.SectionsPagerAdapter;
 import tabian.com.instagramclone.Utils.UniversalImageLoader;

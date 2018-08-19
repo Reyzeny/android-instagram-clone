@@ -19,10 +19,11 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import java.util.ArrayList;
 
-import tabian.com.instagramclone.R;
+
 import tabian.com.instagramclone.Utils.BottomNavigationViewHelper;
 import tabian.com.instagramclone.Utils.GridImageAdapter;
 import tabian.com.instagramclone.Utils.UniversalImageLoader;
+import tabian.com.instagramclone2.R;
 
 /**
  * Created by User on 5/28/2017.

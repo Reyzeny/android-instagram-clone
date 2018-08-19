@@ -22,7 +22,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import tabian.com.instagramclone.Home.HomeActivity;
-import tabian.com.instagramclone.R;
+import tabian.com.instagramclone2.R;
+
 
 /**
  * Created by User on 6/19/2017.
@@ -80,52 +81,62 @@ public class LoginActivity extends AppCompatActivity {
 
          //initialize the button for logging in
          Button btnLogin = (Button) findViewById(R.id.btn_login);
-         btnLogin.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Log.d(TAG, "onClick: attempting to log in.");
 
-                 String email = mEmail.getText().toString();
-                 String password = mPassword.getText().toString();
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(intent);
 
-                 if(isStringNull(email) && isStringNull(password)){
-                     Toast.makeText(mContext, "You must fill out all the fields", Toast.LENGTH_SHORT).show();
-                 }else{
-                     mProgressBar.setVisibility(View.VISIBLE);
-                     mPleaseWait.setVisibility(View.VISIBLE);
+            }
+        });
 
-                     mAuth.signInWithEmailAndPassword(email, password)
-                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                                 @Override
-                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                     Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
-
-                                     // If sign in fails, display a message to the user. If sign in succeeds
-                                     // the auth state listener will be notified and logic to handle the
-                                     // signed in user can be handled in the listener.
-                                     if (!task.isSuccessful()) {
-                                         Log.w(TAG, "signInWithEmail:failed", task.getException());
-
-                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed),
-                                                 Toast.LENGTH_SHORT).show();
-                                         mProgressBar.setVisibility(View.GONE);
-                                         mPleaseWait.setVisibility(View.GONE);
-                                     }
-                                     else{
-                                         Log.d(TAG, "signInWithEmail: successful login");
-                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_success),
-                                                 Toast.LENGTH_SHORT).show();
-                                         mProgressBar.setVisibility(View.GONE);
-                                         mPleaseWait.setVisibility(View.GONE);
-                                     }
-
-                                     // ...
-                                 }
-                             });
-                 }
-
-             }
-         });
+//         btnLogin.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 Log.d(TAG, "onClick: attempting to log in.");
+//
+//                 String email = mEmail.getText().toString();
+//                 String password = mPassword.getText().toString();
+//
+//                 if(isStringNull(email) && isStringNull(password)){
+//                     Toast.makeText(mContext, "You must fill out all the fields", Toast.LENGTH_SHORT).show();
+//                 }else{
+//                     mProgressBar.setVisibility(View.VISIBLE);
+//                     mPleaseWait.setVisibility(View.VISIBLE);
+//
+//                     mAuth.signInWithEmailAndPassword(email, password)
+//                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+//                                 @Override
+//                                 public void onComplete(@NonNull Task<AuthResult> task) {
+//                                     Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+//
+//                                     // If sign in fails, display a message to the user. If sign in succeeds
+//                                     // the auth state listener will be notified and logic to handle the
+//                                     // signed in user can be handled in the listener.
+//                                     if (!task.isSuccessful()) {
+//                                         Log.w(TAG, "signInWithEmail:failed", task.getException());
+//
+//                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed),
+//                                                 Toast.LENGTH_SHORT).show();
+//                                         mProgressBar.setVisibility(View.GONE);
+//                                         mPleaseWait.setVisibility(View.GONE);
+//                                     }
+//                                     else{
+//                                         Log.d(TAG, "signInWithEmail: successful login");
+//                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_success),
+//                                                 Toast.LENGTH_SHORT).show();
+//                                         mProgressBar.setVisibility(View.GONE);
+//                                         mPleaseWait.setVisibility(View.GONE);
+//                                     }
+//
+//                                     // ...
+//                                 }
+//                             });
+//                 }
+//
+//             }
+//         });
 
          TextView linkSignUp = (TextView) findViewById(R.id.link_signup);
          linkSignUp.setOnClickListener(new View.OnClickListener() {

@@ -10,8 +10,9 @@ import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-import tabian.com.instagramclone.R;
+
 import tabian.com.instagramclone.Utils.BottomNavigationViewHelper;
+import tabian.com.instagramclone2.R;
 
 /**
  * Created by User on 5/28/2017.

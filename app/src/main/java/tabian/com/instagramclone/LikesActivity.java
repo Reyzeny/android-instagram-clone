@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
-
+import tabian.com.instagramclone2.R;
 import tabian.com.instagramclone.Utils.BottomNavigationViewHelper;
 
 /**
